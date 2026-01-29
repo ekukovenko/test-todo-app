@@ -1,7 +1,6 @@
 """Tests for TODO API."""
 
 import pytest
-
 from fastapi.testclient import TestClient
 
 from app.database import db

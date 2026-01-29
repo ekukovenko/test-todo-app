@@ -1,10 +1,11 @@
 """Tests for TODO API."""
 
 import pytest
+
 from fastapi.testclient import TestClient
 
-from app.main import app
 from app.database import db
+from app.main import app
 
 
 @pytest.fixture(autouse=True)

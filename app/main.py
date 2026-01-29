@@ -1,31 +1,9 @@
-"""FastAPI TODO Application."""
-
+import logging
 from fastapi import FastAPI
-from fastapi.responses import FileResponse
-from fastapi.staticfiles import StaticFiles
 
-from app.routers import todos
-
-app = FastAPI(
-    title="TODO App",
-    description="Simple TODO application for testing AI coding agents",
-    version="0.1.0",
-)
-
-# Include routers
-app.include_router(todos.router, prefix="/api")
-
-# Serve static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
-
-
-@app.get("/")
-def read_root():
-    """Serve the main page."""
-    return FileResponse("static/index.html")
-
+app = FastAPI()
 
 @app.get("/health")
 def health_check():
-    """Health check endpoint."""
+    logging.info("Health check called")
     return {"status": "healthy"}

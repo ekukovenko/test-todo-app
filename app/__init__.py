@@ -2,11 +2,6 @@
 
 __version__ = "1.0.0"
 
-def get_version() -> str:
-    """
-    Возвращает текущую версию приложения.
 
-    Returns:
-        str: Строка с номером версии.
-    """
+def get_version() -> str:
     return __version__

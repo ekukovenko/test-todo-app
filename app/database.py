@@ -1,6 +1,6 @@
 """Simple in-memory database for TODOs."""
 
-from app.models import Todo, TodoCreate, TodoUpdate, Priority
+from app.models import Todo, TodoCreate, TodoUpdate
 
 
 class TodoDatabase:

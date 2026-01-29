@@ -1,8 +1,8 @@
 """FastAPI TODO Application."""
 
 from fastapi import FastAPI
-from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.routers import todos
 

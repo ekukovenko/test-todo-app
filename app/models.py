@@ -4,6 +4,9 @@ from pydantic import BaseModel, Field
 from enum import Enum
 
 
+__all__ = ["Priority", "TodoCreate", "TodoUpdate", "Todo"]
+
+
 class Priority(str, Enum):
     LOW = "low"
     MEDIUM = "medium"

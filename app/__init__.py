@@ -1,1 +1,2 @@
 # TODO App
+APP_NAME = "TODO App"

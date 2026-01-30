@@ -1,12 +1,13 @@
+\
 def subtract(a: int, b: int) -> int:
-    """
-    Subtracts two numbers.
+    \"\"\"
+    Вычитает второе число из первого.
 
     Args:
-        a: The first number.
-        b: The second number to subtract from the first.
+        a: Первое число.
+        b: Второе число, которое нужно вычесть из первого.
 
     Returns:
-        The result of the subtraction.
-    """
+        Результат вычитания.
+    \"\"\"
     return a - b

@@ -1,6 +1,5 @@
-\
 def subtract(a: int, b: int) -> int:
-    \"\"\"
+    """
     Вычитает второе число из первого.
 
     Args:
@@ -9,5 +8,5 @@ def subtract(a: int, b: int) -> int:
 
     Returns:
         Результат вычитания.
-    \"\"\"
+    """
     return a - b

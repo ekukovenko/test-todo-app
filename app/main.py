@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from app.routers import todos
+from app.routers import todos, calculator
 
 app = FastAPI(
     title="TODO App",
@@ -14,6 +14,7 @@ app = FastAPI(
 
 # Include routers
 app.include_router(todos.router, prefix="/api")
+app.include_router(calculator.router, prefix="/api")
 
 # Serve static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
